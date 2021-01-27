@@ -1,0 +1,29 @@
+@import "../../../../assets/styles/variables";
+
+.ClientDetailSection{
+    max-height: 66px;
+    max-width: 295px;
+    height: 100%;
+    width: 100%;
+    padding: 1em;
+    font-family: $lorem-ipsum;
+    color: white;
+    border-radius: $radius-2 $radius-2 $radius-1 $radius-1;
+    background: linear-gradient(45deg, $color-7, $color-8);
+}
+.__Fields{
+    display: flex;
+    justify-content: space-between;
+    
+}
+.__Fields h5{
+    font-size: 1em;
+}
+.__Data{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+.__Data h3{
+    font-size: 1.5rem;
+}
