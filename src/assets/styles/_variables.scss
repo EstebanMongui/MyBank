@@ -1,5 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Barlow:wght@400;500&family=Kanit:wght@300;400;700&display=swap');
     
+//*******$Settings********//
+*{
+    margin:0px;
+    padding: 0px;
+    font-size: 12px;
+    font-weight: unset;
+    box-sizing: border-box;
+    border: none;
+    text-decoration: none;
+    list-style: none;
+}
+*:focus{
+    outline: unset;
+}
 //*******$COLORS**********//
 
 //Decorative colors
@@ -19,8 +33,14 @@ $color-10: #7BE1FE;
 
 
 //Text colors
+$font-color: #000000;
 
+//***********Fonts**********//
 
-//Fonts 
+//Brand fonts
 $titles: 'Barlow', sans-serif;
 $lorem-ipsum: 'Kanit', sans-serif;
+
+//**********Sizes**********//
+$radius-1: 10px;
+$radius-2: 20px;
