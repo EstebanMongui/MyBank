@@ -1,6 +1,8 @@
 import React from "react";
 import ReactDom from "react-dom";
+//Components
+import Home from "./pages/Home/Home.jsx"
 
-const container = document.getElementById('App')
+const container = document.getElementById('App');
 
-ReactDom.render( <h1>Hello world</h1>, container)
+ReactDom.render(<Home />, container);
