@@ -1,0 +1,42 @@
+@import "../../assets/styles/variables.scss";
+
+.Header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-height: 85px;
+    max-width: 955px;
+    height: 100%;
+    width: 100vw;
+    padding: 20px;
+    background-color: transparent;
+}
+.__Logo{
+    font-family: $titles;
+    font-size: 3em;
+    font-weight: 700;
+    color: black;
+}
+.__Logo span{
+    font-size: 1em;
+    font-weight: 500;
+}
+.__Items{
+    display: flex;
+    justify-content: space-between;
+}
+.__Items li a{
+    margin: 0px 10px;
+    font-family: $titles;
+    font-size: 1.5em;
+    font-weight: 500;
+}
+.__Items li a:hover{
+    text-decoration: underline;
+}
+
+@media screen and (max-width:425px){
+    .__Items li a{
+        display: none;
+    }   
+}
