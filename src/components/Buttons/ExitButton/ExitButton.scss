@@ -1,0 +1,6 @@
+@import "../../../assets/styles/variables";
+@import "../../../assets/styles/mixins/buttons";
+
+.ExitButton{
+    @include small-button;
+}

@@ -1,0 +1,23 @@
+@mixin small-button ($button-color:Black, $text-color:White, $max-width:104px){
+    max-height: 44px;
+    max-width: $max-width;
+    height: 100vw;
+    width: 100vw;
+    border-radius: $radius-2;
+    background-color: $button-color;
+    font-family: $lorem-ipsum;
+    font-size: 1.8em;
+    font-weight: 500;
+    color: $text-color;
+    transition: .25s;
+
+    &:hover{
+        box-shadow: 1px 4px 5px rgba(0,0,0,.25%);
+        background-color: white;
+        color: $button-color;
+    }
+
+    @media screen and (max-width:425px){
+        font-size: 1.3em;
+    }
+}
