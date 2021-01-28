@@ -8,17 +8,21 @@ import Visa from "../../assets/icons/visa.svg"
 
 class Card extends React.Component{
     render(){
-        const{
-            CardNumber="1234 4567",
-        }=this.props;
         return(
-            <div className="Card">
-                <figure>
-                    <img src={Chip} alt=""/>
-                    <img src={Visa} alt=""/>
-                </figure>
-                <h2 className="__Number">{CardNumber}</h2>
-                <ClientDetailSection />
+            <div className="Card__Container">
+                {this.props.clients.map(client=>{
+                    return(
+                        <div key={client.id} className="Card">
+                            <figure>
+                                <img src={Chip} alt=""/>
+                                <img src={Visa} alt=""/>
+                            </figure>
+                            <h2 className="__Number">{client.cardNumber}</h2>
+                            <ClientDetailSection owner={client.owner} expires={client.expires}/>
+                        </div>
+                    )
+                }
+                )}
             </div>
         )
     }

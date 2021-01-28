@@ -1,0 +1,22 @@
+{
+    "clients":[
+        {
+            "id":1,
+            "owner":"Clemens Rehbein",
+            "expires":"10/35",
+            "cardNumber":"1234 5677 8910 1112"
+        },
+        {
+            "id":2,
+            "owner":"Rosalia",
+            "expires":"10/30",
+            "cardNumber":"1234 5677 8910 1112"
+        },
+        {
+            "id":3,
+            "owner":"Steve Aoki",
+            "expires":"5/29",
+            "cardNumber":"1234 5677 8910 1112"
+        }
+    ]
+}

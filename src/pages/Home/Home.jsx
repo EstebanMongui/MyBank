@@ -4,12 +4,14 @@ import './Home.scss'
 import Header from "../../components/Header/Header.jsx"
 import Card from "../../components/Card/Card.jsx"
 import TransactionButton from "../../components/Buttons/TransactionButton/TransactionButton.jsx"
+//Data
+import data from "../../../.data/data.json"
 
 class Home extends React.Component {
     render() {
         const{
-            title="MyBank transactions and stay save",
-            description="Make your transactions now is more cheap and more easy. What do you wait for make that?"
+            title="MyBank, more easy transactions",
+            description="Make your transactions now is secure and more cheap . What do you wait for make one?"
         }=this.props
         return(
             <section className='Home'>
@@ -20,7 +22,7 @@ class Home extends React.Component {
                         <h5>{description}</h5>
                         <TransactionButton/>
                     </div>
-                    <Card />
+                    <Card clients={data.clients}/>
                 </div>
             </section>
         )
