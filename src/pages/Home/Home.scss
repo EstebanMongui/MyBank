@@ -1,0 +1,55 @@
+@import "../../assets/styles/variables.scss";
+
+.Home{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    padding-bottom: 40px;
+    background-color: white;
+}
+
+.Home__Container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    z-index: 2;
+    height: 100vh;
+    width: 100vw;
+    padding-bottom: 40px;
+    background: linear-gradient(165deg, white 20%, transparent 50%),
+                linear-gradient(217deg, $color-1, $color-2, transparent 50%),
+                linear-gradient(85deg, $color-5 10%, $color-6 100%, transparent 40%),
+                linear-gradient(-45deg, $color-3, $color-4, transparent 60%);
+}
+.Home__TextSection{
+    text-align: center;
+    max-width: 50%;
+}
+.Home__TextSection h1{
+    font-family: $titles;
+    font-size: 5.3em;
+    font-weight: 700;
+    letter-spacing: -1px;
+    line-height: 95%;
+    margin-bottom: 30px;
+}
+.Home__TextSection h5{
+    font-family: $lorem-ipsum;
+    font-size: 1.5em;
+    font-weight: 400;
+    margin-bottom: 30px;
+}
+
+@media screen and (max-width:425px){
+    .Home__TextSection h1{
+        font-size: 3em;
+    }
+    .Home__TextSection h5{
+        font-size: 1em;
+    }
+}
